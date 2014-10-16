@@ -1,0 +1,21 @@
+{
+  "name": "gfm-mail",
+  "version": "1.0.0",
+  "description": "GitHub flavored markdown files reduced in size for html mail usage",
+  "main": "index.js",
+  "dependencies": {
+    "clean-css": "^2.2.16",
+    "cheerio": "^0.17.0",
+    "html-minifier": "^0.6.8",
+    "uncss": "^0.9.0"
+  },
+  "bin": {
+    "gfm-mail": "bin/gfm-mail"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
