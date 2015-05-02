@@ -5,7 +5,7 @@ html = ''
 process.stdin.on 'data', (d) -> html += d
 process.stdin.on 'end', () ->
   cheerio = require 'cheerio'
-  $ = cheerio.load(html)
+  $ = cheerio.load(html, decodeEntities: false)
 
   css = $('style').text()
 
@@ -26,7 +26,7 @@ process.stdin.on 'end', () ->
     $('style').remove()
     $('head').append("<style>#{out}</style>")
     # htmlminify = require('html-minifier').minify
-    console.log $.html() 
+    console.log $.html()
       # removeComments: true
       # collapseWhitespace: true
       # # conservativeCollapse: true
