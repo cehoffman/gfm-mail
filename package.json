@@ -4,10 +4,10 @@
   "description": "GitHub flavored markdown files reduced in size for html mail usage",
   "main": "index.js",
   "dependencies": {
-    "clean-css": "^2.2.16",
-    "cheerio": "^0.17.0",
-    "html-minifier": "^0.6.8",
-    "uncss": "^0.9.0"
+    "clean-css": "^3.2.6",
+    "cheerio": "^0.19.0",
+    "html-minifier": "^0.7.2",
+    "uncss": "^0.12.1"
   },
   "bin": {
     "gfm-mail": "bin/gfm-mail"
